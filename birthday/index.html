@@ -1,0 +1,2758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>For My S.Theertha ❤️</title>
+
+<style>
+
+/* =========================================
+   GOOGLE FONTS
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   BASIC SETTINGS
+========================================= */
+
+:root {
+
+  --pink: #ff7eb3;
+  --purple: #a18cd1;
+  --dark: #24152f;
+  --white: #fff;
+
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+
+  color: white;
+
+  background: #24152f;
+
+  overflow-x: hidden;
+
+  min-height: 100vh;
+
+}
+
+
+/* =========================================
+   ANIMATED BACKGROUND
+========================================= */
+
+.background {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      135deg,
+      #281b43,
+      #603c68,
+      #b76e91,
+      #3e2857
+    );
+
+  background-size: 400% 400%;
+
+  animation: gradient 12s ease infinite;
+
+}
+
+
+@keyframes gradient {
+
+  0%,
+  100% {
+
+    background-position: 0% 50%;
+
+  }
+
+  50% {
+
+    background-position: 100% 50%;
+
+  }
+
+}
+
+
+/* =========================================
+   FLOATING PARTICLES
+========================================= */
+
+#particles {
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  overflow: hidden;
+
+  z-index: -1;
+
+}
+
+
+.particle {
+
+  position: absolute;
+
+  bottom: -30px;
+
+  animation: floatUp linear infinite;
+
+  opacity: .7;
+
+}
+
+
+@keyframes floatUp {
+
+  to {
+
+    transform:
+      translateY(-110vh)
+      rotate(360deg);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+  position: fixed;
+
+  top: 0;
+
+  width: 100%;
+
+  z-index: 20;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 16px 7%;
+
+  background: rgba(35, 20, 48, .45);
+
+  backdrop-filter: blur(15px);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.12);
+
+}
+
+
+.logo {
+
+  font-family: 'Great Vibes', cursive;
+
+  font-size: 30px;
+
+  color: #ffc1dd;
+
+}
+
+
+.music-btn {
+
+  border:
+    1px solid rgba(255,255,255,.4);
+
+  color: white;
+
+  background:
+    rgba(255,255,255,.1);
+
+  padding: 9px 15px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+
+.music-btn:hover {
+
+  background:
+    rgba(255,255,255,.25);
+
+  transform: scale(1.05);
+
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+
+  display: none;
+
+  min-height: 100vh;
+
+  padding: 110px 20px 50px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  text-align: center;
+
+  animation: pageIn .8s ease;
+
+}
+
+
+.page.active {
+
+  display: flex;
+
+}
+
+
+@keyframes pageIn {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(25px)
+      scale(.98);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+
+  }
+
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+h1 {
+
+  font-size:
+    clamp(35px, 7vw, 70px);
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+}
+
+
+.script {
+
+  font-family:
+    'Great Vibes',
+    cursive;
+
+  color: #ffc0db;
+
+  font-size:
+    clamp(45px, 9vw, 85px);
+
+  font-weight: normal;
+
+}
+
+
+.subtitle {
+
+  color: #f9dce9;
+
+  margin-top: 18px;
+
+  line-height: 1.8;
+
+  max-width: 600px;
+
+  font-size: 15px;
+
+}
+
+
+/* =========================================
+   HEART
+========================================= */
+
+.hero-heart {
+
+  font-size: 75px;
+
+  margin: 25px;
+
+  animation:
+    heartbeat 1.5s infinite;
+
+}
+
+
+@keyframes heartbeat {
+
+  50% {
+
+    transform: scale(1.3);
+
+  }
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+
+  padding: 13px 25px;
+
+  border: none;
+
+  border-radius: 35px;
+
+  color: #54284f;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffd0e2,
+      #ff91bd
+    );
+
+  font-weight: 600;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  margin: 10px;
+
+  transition: .3s;
+
+  box-shadow:
+    0 8px 25px
+    rgba(255,126,179,.25);
+
+}
+
+
+.btn:hover {
+
+  transform:
+    translateY(-4px)
+    scale(1.04);
+
+  box-shadow:
+    0 12px 30px
+    rgba(255,126,179,.4);
+
+}
+
+
+.btn.secondary {
+
+  background:
+    rgba(255,255,255,.12);
+
+  color: white;
+
+  border:
+    1px solid rgba(255,255,255,.4);
+
+  box-shadow: none;
+
+}
+
+
+/* =========================================
+   ENVELOPE
+========================================= */
+
+.envelope {
+
+  width: 250px;
+
+  height: 165px;
+
+  position: relative;
+
+  margin: 55px auto 30px;
+
+  background: #ffb5d1;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 15px 40px
+    rgba(0,0,0,.3);
+
+}
+
+
+.envelope:before {
+
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  border-left:
+    125px solid transparent;
+
+  border-right:
+    125px solid transparent;
+
+  border-top:
+    95px solid #ff80b1;
+
+  transform-origin: top;
+
+  transition:
+    transform .8s;
+
+  z-index: 3;
+
+}
+
+
+.envelope:after {
+
+  content: '❤️';
+
+  position: absolute;
+
+  top: 65px;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  font-size: 35px;
+
+  z-index: 4;
+
+}
+
+
+.envelope.open:before {
+
+  transform:
+    rotateX(180deg);
+
+}
+
+
+.letter {
+
+  position: absolute;
+
+  width: 85%;
+
+  height: 125px;
+
+  background: white;
+
+  color: #b34f81;
+
+  left: 7.5%;
+
+  top: 15px;
+
+  border-radius: 6px;
+
+  padding: 15px;
+
+  font-family:
+    'Great Vibes',
+    cursive;
+
+  font-size: 25px;
+
+  transition: .8s;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.envelope.open .letter {
+
+  transform:
+    translateY(-115px);
+
+  z-index: 2;
+
+}
+
+
+/* =========================================
+   LOVE CARDS
+========================================= */
+
+.cards {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(210px,1fr)
+    );
+
+  gap: 22px;
+
+  max-width: 850px;
+
+  width: 100%;
+
+  margin-top: 35px;
+
+}
+
+
+.flip-card {
+
+  height: 220px;
+
+  perspective: 1000px;
+
+  cursor: pointer;
+
+}
+
+
+.flip-inner {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+  transition:
+    transform .8s;
+
+  transform-style:
+    preserve-3d;
+
+}
+
+
+.flip-card.open
+.flip-inner {
+
+  transform:
+    rotateY(180deg);
+
+}
+
+
+.flip-front,
+.flip-back {
+
+  position: absolute;
+
+  inset: 0;
+
+  backface-visibility: hidden;
+
+  border:
+    1px solid rgba(255,255,255,.2);
+
+  border-radius: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(255,255,255,.12);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 10px 30px
+    rgba(0,0,0,.15);
+
+}
+
+
+.flip-front {
+
+  font-size: 50px;
+
+}
+
+
+.flip-front p {
+
+  font-size: 14px;
+
+  margin-top: 15px;
+
+  color: #ffd6e6;
+
+}
+
+
+.flip-back {
+
+  transform:
+    rotateY(180deg);
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffacd0,
+      #a78bda
+    );
+
+  color: #452543;
+
+}
+
+
+.flip-back h3 {
+
+  font-family:
+    'Great Vibes',
+    cursive;
+
+  font-size: 30px;
+
+  margin-bottom: 12px;
+
+}
+
+
+.flip-back p {
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+}
+
+
+/* =========================================
+   PHOTO UPLOAD
+========================================= */
+
+.upload-box {
+
+  border:
+    2px dashed
+    rgba(255,255,255,.5);
+
+  padding: 30px;
+
+  border-radius: 22px;
+
+  margin: 25px 0;
+
+  width:
+    min(90%,550px);
+
+  background:
+    rgba(255,255,255,.08);
+
+}
+
+
+.upload-box input {
+
+  display: none;
+
+}
+
+
+.upload-label {
+
+  display: inline-block;
+
+  padding: 13px 22px;
+
+  border-radius: 30px;
+
+  background: #ffc0dc;
+
+  color: #54284f;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-top: 15px;
+
+  transition: .3s;
+
+}
+
+
+.upload-label:hover {
+
+  transform:
+    scale(1.05);
+
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(130px,1fr)
+    );
+
+  gap: 15px;
+
+  max-width: 850px;
+
+  width: 100%;
+
+  margin: 20px auto;
+
+}
+
+
+.gallery img {
+
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  border:
+    3px solid
+    rgba(255,255,255,.4);
+
+  transition: .4s;
+
+  animation:
+    photoIn .5s ease;
+
+  cursor: pointer;
+
+}
+
+
+.gallery img:hover {
+
+  transform:
+    scale(1.06)
+    rotate(2deg);
+
+  box-shadow:
+    0 10px 30px
+    rgba(255,126,179,.4);
+
+}
+
+
+@keyframes photoIn {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      scale(.7);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      scale(1);
+
+  }
+
+}
+
+
+/* =========================================
+   FULL SCREEN PHOTO VIEWER
+========================================= */
+
+.photo-viewer {
+
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  background:
+    rgba(10,5,18,.94);
+
+  backdrop-filter:
+    blur(15px);
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+}
+
+
+.photo-viewer.active {
+
+  display: flex;
+
+  animation:
+    viewerFade .35s ease;
+
+}
+
+
+@keyframes viewerFade {
+
+  from {
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 1;
+
+  }
+
+}
+
+
+.photo-viewer img {
+
+  max-width: 90%;
+
+  max-height: 82vh;
+
+  object-fit: contain;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 80px
+    rgba(0,0,0,.7);
+
+  animation:
+    photoZoom .4s ease;
+
+}
+
+
+@keyframes photoZoom {
+
+  from {
+
+    transform: scale(.7);
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    transform: scale(1);
+
+    opacity: 1;
+
+  }
+
+}
+
+
+/* =========================================
+   CLOSE PHOTO
+========================================= */
+
+.close-photo {
+
+  position: absolute;
+
+  top: 20px;
+
+  right: 25px;
+
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(255,255,255,.4);
+
+  background:
+    rgba(255,255,255,.12);
+
+  color: white;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  z-index: 10001;
+
+  transition: .3s;
+
+}
+
+
+.close-photo:hover {
+
+  background:
+    rgba(255,255,255,.3);
+
+  transform:
+    rotate(90deg)
+    scale(1.1);
+
+}
+
+
+/* =========================================
+   PHOTO PREVIOUS / NEXT
+========================================= */
+
+.photo-nav {
+
+  position: absolute;
+
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(255,255,255,.4);
+
+  background:
+    rgba(255,255,255,.12);
+
+  color: white;
+
+  font-size: 36px;
+
+  cursor: pointer;
+
+  z-index: 10001;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: .3s;
+
+}
+
+
+.photo-nav:hover {
+
+  background:
+    rgba(255,255,255,.3);
+
+  transform:
+    translateY(-50%)
+    scale(1.1);
+
+}
+
+
+.photo-prev {
+
+  left: 25px;
+
+}
+
+
+.photo-next {
+
+  right: 25px;
+
+}
+
+
+/* =========================================
+   PHOTO COUNTER
+========================================= */
+
+.photo-counter {
+
+  position: absolute;
+
+  bottom: 22px;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  color: white;
+
+  background:
+    rgba(0,0,0,.45);
+
+  padding: 7px 16px;
+
+  border-radius: 25px;
+
+  font-size: 14px;
+
+  z-index: 10001;
+
+}
+
+
+/* =========================================
+   FINAL SURPRISE
+========================================= */
+
+.surprise-box {
+
+  max-width: 650px;
+
+  width: 100%;
+
+  padding: 35px 25px;
+
+  border-radius: 25px;
+
+  background:
+    rgba(255,255,255,.12);
+
+  border:
+    1px solid
+    rgba(255,255,255,.25);
+
+  backdrop-filter:
+    blur(15px);
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.2);
+
+}
+
+
+.final-message {
+
+  display: none;
+
+  margin-top: 25px;
+
+  color: #ffe1ee;
+
+  line-height: 2;
+
+  animation:
+    pageIn .8s ease;
+
+}
+
+
+.final-message.show {
+
+  display: block;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+  color:
+    rgba(255,255,255,.6);
+
+  font-size: 12px;
+
+  margin-top: 30px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px) {
+
+  header {
+
+    padding:
+      13px 5%;
+
+  }
+
+  .logo {
+
+    font-size: 25px;
+
+  }
+
+  .page {
+
+    padding:
+      100px 18px 35px;
+
+  }
+
+  .cards {
+
+    grid-template-columns: 1fr;
+
+    max-width: 330px;
+
+  }
+
+  .flip-card {
+
+    height: 190px;
+
+  }
+
+  .gallery {
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+  }
+
+  .gallery img {
+
+    height: 150px;
+
+  }
+
+  .upload-box {
+
+    padding:
+      22px 12px;
+
+  }
+
+  .photo-viewer {
+
+    padding: 10px;
+
+  }
+
+  .photo-viewer img {
+
+    max-width: 94%;
+
+    max-height: 75vh;
+
+    border-radius: 12px;
+
+  }
+
+  .close-photo {
+
+    top: 12px;
+
+    right: 12px;
+
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 25px;
+
+  }
+
+  .photo-nav {
+
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 28px;
+
+  }
+
+  .photo-prev {
+
+    left: 8px;
+
+  }
+
+  .photo-next {
+
+    right: 8px;
+
+  }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL PHONES
+========================================= */
+
+@media(max-width:380px) {
+
+  .gallery {
+
+    gap: 8px;
+
+  }
+
+  .gallery img {
+
+    height: 130px;
+
+  }
+
+  .script {
+
+    font-size: 48px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     BACKGROUND
+========================================= -->
+
+<div class="background"></div>
+
+<div id="particles"></div>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+  <div class="logo">
+    For My ❤️
+  </div>
+
+  <button
+    class="music-btn"
+    onclick="toggleMusic()"
+    id="musicBtn">
+
+    ♫ Music
+
+  </button>
+
+</header>
+
+
+<!-- =========================================
+     PAGE 1
+========================================= -->
+
+<section
+  class="page active"
+  id="page1">
+
+  <div class="hero-heart">
+    💗
+  </div>
+
+  <p class="subtitle">
+
+    A little surprise made with lots of love...
+
+  </p>
+
+  <h1>
+
+    Happy Birthday Theertha
+
+    <br>
+
+    <span class="script">
+      My Beautiful Girl
+    </span>
+
+  </h1>
+
+  <p class="subtitle">
+
+    Today is not just another day.
+    It's the day someone very special
+    came into this world.
+
+    <br>
+
+    And that someone means everything to me. ❤️
+
+  </p>
+
+  <button
+    class="btn"
+    onclick="nextPage(2)">
+
+    Start Your Surprise ✨
+
+  </button>
+
+  <footer>
+    Made with endless love ❤️
+  </footer>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 2
+========================================= -->
+
+<section
+  class="page"
+  id="page2">
+
+  <h1 class="script">
+    A Little Letter For You
+  </h1>
+
+  <p class="subtitle">
+
+    Tap the envelope to open
+    your special letter 💌
+
+  </p>
+
+
+  <div
+    class="envelope"
+    id="envelope"
+    onclick="openEnvelope()">
+
+    <div class="letter">
+
+      To My Favourite Person ❤️
+
+    </div>
+
+  </div>
+
+
+  <p
+    id="letterHint"
+    class="subtitle">
+
+    Click the envelope
+    to reveal your message
+
+  </p>
+
+
+  <button
+    class="btn"
+    onclick="nextPage(3)">
+
+    Continue ❤️
+
+  </button>
+
+
+  <button
+    class="btn secondary"
+    onclick="nextPage(1)">
+
+    ← Back
+
+  </button>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 3
+========================================= -->
+
+<section
+  class="page"
+  id="page3">
+
+  <h1 class="script">
+    Open Your Love Cards
+  </h1>
+
+  <p class="subtitle">
+
+    Every card has a little message
+    for you. Tap to discover 💝
+
+  </p>
+
+
+  <div class="cards">
+
+
+    <!-- CARD 1 -->
+
+    <div
+      class="flip-card"
+      onclick="this.classList.toggle('open')">
+
+      <div class="flip-inner">
+
+        <div class="flip-front">
+
+          🌹
+
+          <p>
+            Open Me
+          </p>
+
+        </div>
+
+        <div class="flip-back">
+
+          <h3>
+            My Happiness
+          </h3>
+
+          <p>
+
+            Your smile makes even
+            my ordinary days beautiful.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 2 -->
+
+    <div
+      class="flip-card"
+      onclick="this.classList.toggle('open')">
+
+      <div class="flip-inner">
+
+        <div class="flip-front">
+
+          💌
+
+          <p>
+            Open Me
+          </p>
+
+        </div>
+
+        <div class="flip-back">
+
+          <h3>
+            My Favourite
+          </h3>
+
+          <p>
+
+            Among millions of people,
+            you will always be
+            my favourite person.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+
+    <div
+      class="flip-card"
+      onclick="this.classList.toggle('open')">
+
+      <div class="flip-inner">
+
+        <div class="flip-front">
+
+          🦋
+
+          <p>
+            Open Me
+          </p>
+
+        </div>
+
+        <div class="flip-back">
+
+          <h3>
+            My Forever
+          </h3>
+
+          <p>
+
+            I wish to create countless
+            beautiful memories with you.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <br>
+
+
+  <button
+    class="btn"
+    onclick="nextPage(4)">
+
+    Our Memories 📸
+
+  </button>
+
+
+  <button
+    class="btn secondary"
+    onclick="nextPage(2)">
+
+    ← Back
+
+  </button>
+
+</section>
+
+
+<!-- =========================================
+     PAGE 4 - MEMORIES
+========================================= -->
+
+<section
+  class="page"
+  id="page4">
+
+
+  <h1 class="script">
+    Our Beautiful Memories
+  </h1>
+
+
+  <p class="subtitle">
+
+    Every picture tells a story.
+    Click a photo to see it beautifully. ❤️
+
+  </p>
+
+
+  <!-- PHOTO UPLOAD BOX -->
+
+  <div class="upload-box">
+
+    <div style="font-size:45px">
+      📷
+    </div>
+
+    <h3 style="margin-top:10px">
+
+      Add Your Favourite Photos
+
+    </h3>
+
+    <p class="subtitle">
+
+      Select multiple pictures
+      from your phone or computer.
+
+    </p>
+
+
+    <label
+      for="photoInput"
+      class="upload-label">
+
+      + Add Photos
+
+    </label>
+
+
+    <input
+      type="file"
+      id="photoInput"
+      accept="image/*"
+      multiple>
+
+  </div>
+
+
+  <!-- PHOTO GALLERY -->
+
+  <div
+    class="gallery"
+    id="gallery">
+
+
+    <!-- YOUR PHOTOS -->
+
+    <img
+      src="WhatsApp Image 2026-10-03 at 2.38.11 PM.jpeg"
+      alt="Romantic memory">
+
+
+    <img
+      src="WhatsApp Image 2026-10-03 at 2.38.46 PM.jpeg"
+      alt="Love">
+
+
+    <img
+      src="WhatsApp Image 2026-10-03 at 2.39.08 PM.jpeg"
+      alt="Beautiful memory">
+
+
+    <img
+      src="WhatsApp Image 2026-10-03 at 2.40.54 PM.jpeg"
+      alt="Our Beautiful Memory">
+
+
+  </div>
+
+
+  <p
+    class="subtitle"
+    style="font-size:12px">
+
+    Tap any photo to open it.
+    You can also add more photos above. ❤️
+
+  </p>
+
+
+  <button
+    class="btn"
+    onclick="nextPage(5)">
+
+    One More Surprise 🎁
+
+  </button>
+
+
+  <button
+    class="btn secondary"
+    onclick="nextPage(3)">
+
+    ← Back
+
+  </button>
+
+
+</section>
+
+
+<!-- =========================================
+     PAGE 5
+========================================= -->
+
+<section
+  class="page"
+  id="page5">
+
+
+  <div class="surprise-box">
+
+
+    <div
+      style="
+        font-size:65px;
+        animation:heartbeat 1.5s infinite;
+      ">
+
+      🎁
+
+    </div>
+
+
+    <h1 class="script">
+      One Last Surprise
+    </h1>
+
+
+    <p class="subtitle">
+
+      There is something special
+      I want to tell you...
+
+    </p>
+
+
+    <button
+      class="btn"
+      onclick="revealMessage()">
+
+      Open Your Surprise 💗
+
+    </button>
+
+
+    <div
+      class="final-message"
+      id="finalMessage">
+
+
+      <h2 class="script">
+        My Dearest S.Theertha❤️
+      </h2>
+
+
+      <p>
+
+        Happy Birthday, my THEERTHA 🥹💗
+
+        <br><br>
+
+        Thank you for being a beautiful
+        part of my life.
+
+        Every moment with you
+        is precious to me.
+
+        I hope this new year of your life
+        brings you happiness, success,
+        good health, and everything
+        your heart wishes for.
+
+        <br><br>
+
+        No matter where life takes us,
+        I want to keep making memories,
+        laughing together,
+        supporting each other,
+        and growing together.
+
+        <br><br>
+
+        You deserve all the happiness
+        in this world.
+
+        Keep smiling, my girl.
+        Your smile is my favourite thing.
+
+        <br><br>
+
+        I love you today,
+        tomorrow, and always.
+
+        <br><br>
+
+        <span
+          class="script"
+          style="font-size:45px">
+
+          Forever Yours ❤️
+
+        </span>
+
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <button
+    class="btn secondary"
+    onclick="nextPage(4)">
+
+    ← Back to Memories
+
+  </button>
+
+
+  <button
+    class="btn"
+    onclick="celebrate()">
+
+    Celebrate Again 🎉
+
+  </button>
+
+
+</section>
+
+
+<!-- =========================================
+     FULL SCREEN PHOTO VIEWER
+========================================= -->
+
+<div
+  class="photo-viewer"
+  id="photoViewer">
+
+
+  <!-- CLOSE BUTTON -->
+
+  <button
+    class="close-photo"
+    onclick="closePhoto()">
+
+    ×
+
+  </button>
+
+
+  <!-- PREVIOUS -->
+
+  <button
+    class="photo-nav photo-prev"
+    onclick="previousPhoto()">
+
+    ‹
+
+  </button>
+
+
+  <!-- LARGE IMAGE -->
+
+  <img
+    id="largePhoto"
+    src=""
+    alt="Our Memory">
+
+
+  <!-- NEXT -->
+
+  <button
+    class="photo-nav photo-next"
+    onclick="nextPhoto()">
+
+    ›
+
+  </button>
+
+
+  <!-- PHOTO COUNTER -->
+
+  <div
+    class="photo-counter"
+    id="photoCounter">
+
+    1 / 4
+
+  </div>
+
+
+</div>
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script>
+
+
+/* =========================================
+   PAGE NAVIGATION
+========================================= */
+
+function nextPage(number) {
+
+  document
+    .querySelectorAll('.page')
+    .forEach(page => {
+
+      page.classList.remove('active');
+
+    });
+
+
+  const selectedPage =
+    document.getElementById('page' + number);
+
+
+  if (selectedPage) {
+
+    selectedPage.classList.add('active');
+
+  }
+
+
+  window.scrollTo({
+
+    top: 0,
+
+    behavior: 'smooth'
+
+  });
+
+}
+
+
+/* =========================================
+   ENVELOPE
+========================================= */
+
+let envelopeOpened = false;
+
+
+function openEnvelope() {
+
+  const envelope =
+    document.getElementById('envelope');
+
+
+  envelope.classList.toggle('open');
+
+
+  envelopeOpened =
+    !envelopeOpened;
+
+
+  document.getElementById(
+    'letterHint'
+  ).innerText = envelopeOpened
+
+    ? "You are my favourite chapter in this beautiful life. ❤️"
+
+    : "Click the envelope to reveal your message";
+
+}
+
+
+/* =========================================
+   PHOTO UPLOAD
+========================================= */
+
+const photoInput =
+  document.getElementById('photoInput');
+
+
+const gallery =
+  document.getElementById('gallery');
+
+
+photoInput.addEventListener(
+  'change',
+  function(event) {
+
+
+    const files =
+      Array.from(event.target.files);
+
+
+    files.forEach(file => {
+
+
+      if (
+        !file.type.startsWith('image/')
+      ) {
+
+        return;
+
+      }
+
+
+      const reader =
+        new FileReader();
+
+
+      reader.onload =
+        function(e) {
+
+
+          const img =
+            document.createElement('img');
+
+
+          img.src =
+            e.target.result;
+
+
+          img.alt =
+            "Our memory";
+
+
+          gallery.appendChild(img);
+
+
+        };
+
+
+      reader.readAsDataURL(file);
+
+
+    });
+
+
+    /* Allow selecting the same file again */
+
+    photoInput.value = '';
+
+  }
+);
+
+
+/* =========================================
+   FULL SCREEN PHOTO VIEWER
+========================================= */
+
+const photoViewer =
+  document.getElementById(
+    'photoViewer'
+  );
+
+
+const largePhoto =
+  document.getElementById(
+    'largePhoto'
+  );
+
+
+const photoCounter =
+  document.getElementById(
+    'photoCounter'
+  );
+
+
+let currentPhoto = 0;
+
+
+/* GET ALL GALLERY PHOTOS */
+
+function getGalleryImages() {
+
+  return document.querySelectorAll(
+    '#gallery img'
+  );
+
+}
+
+
+/* OPEN PHOTO */
+
+function openPhoto(index) {
+
+  const images =
+    getGalleryImages();
+
+
+  if (images.length === 0) {
+
+    return;
+
+  }
+
+
+  currentPhoto = index;
+
+
+  showPhoto();
+
+}
+
+
+/* SHOW PHOTO */
+
+function showPhoto() {
+
+  const images =
+    getGalleryImages();
+
+
+  if (images.length === 0) {
+
+    return;
+
+  }
+
+
+  /* Loop to first */
+
+  if (
+    currentPhoto >= images.length
+  ) {
+
+    currentPhoto = 0;
+
+  }
+
+
+  /* Loop to last */
+
+  if (
+    currentPhoto < 0
+  ) {
+
+    currentPhoto =
+      images.length - 1;
+
+  }
+
+
+  largePhoto.src =
+    images[currentPhoto].src;
+
+
+  largePhoto.alt =
+    images[currentPhoto].alt;
+
+
+  photoCounter.innerText =
+    (currentPhoto + 1)
+    + " / "
+    + images.length;
+
+
+  photoViewer.classList.add(
+    'active'
+  );
+
+
+  /* Stop page scrolling */
+
+  document.body.style.overflow =
+    'hidden';
+
+}
+
+
+/* CLOSE PHOTO */
+
+function closePhoto() {
+
+  photoViewer.classList.remove(
+    'active'
+  );
+
+
+  document.body.style.overflow =
+    '';
+
+}
+
+
+/* NEXT PHOTO */
+
+function nextPhoto() {
+
+  const images =
+    getGalleryImages();
+
+
+  if (images.length === 0) {
+
+    return;
+
+  }
+
+
+  currentPhoto++;
+
+
+  if (
+    currentPhoto >= images.length
+  ) {
+
+    currentPhoto = 0;
+
+  }
+
+
+  showPhoto();
+
+}
+
+
+/* PREVIOUS PHOTO */
+
+function previousPhoto() {
+
+  const images =
+    getGalleryImages();
+
+
+  if (images.length === 0) {
+
+    return;
+
+  }
+
+
+  currentPhoto--;
+
+
+  if (
+    currentPhoto < 0
+  ) {
+
+    currentPhoto =
+      images.length - 1;
+
+  }
+
+
+  showPhoto();
+
+}
+
+
+/* =========================================
+   CLICK ANY PHOTO
+========================================= */
+
+gallery.addEventListener(
+  'click',
+  function(event) {
+
+
+    if (
+      event.target.tagName === 'IMG'
+    ) {
+
+
+      const images =
+        Array.from(
+          document.querySelectorAll(
+            '#gallery img'
+          )
+        );
+
+
+      currentPhoto =
+        images.indexOf(
+          event.target
+        );
+
+
+      showPhoto();
+
+    }
+
+  }
+);
+
+
+/* =========================================
+   CLICK OUTSIDE IMAGE TO CLOSE
+========================================= */
+
+photoViewer.addEventListener(
+  'click',
+  function(event) {
+
+
+    if (
+      event.target === photoViewer
+    ) {
+
+      closePhoto();
+
+    }
+
+  }
+);
+
+
+/* =========================================
+   KEYBOARD CONTROLS
+========================================= */
+
+document.addEventListener(
+  'keydown',
+  function(event) {
+
+
+    if (
+      !photoViewer.classList.contains(
+        'active'
+      )
+    ) {
+
+      return;
+
+    }
+
+
+    /* ESC */
+
+    if (
+      event.key === 'Escape'
+    ) {
+
+      closePhoto();
+
+    }
+
+
+    /* RIGHT ARROW */
+
+    if (
+      event.key === 'ArrowRight'
+    ) {
+
+      nextPhoto();
+
+    }
+
+
+    /* LEFT ARROW */
+
+    if (
+      event.key === 'ArrowLeft'
+    ) {
+
+      previousPhoto();
+
+    }
+
+  }
+);
+
+
+/* =========================================
+   FINAL SURPRISE
+========================================= */
+
+function revealMessage() {
+
+  document
+    .getElementById('finalMessage')
+    .classList.add('show');
+
+
+  createHearts(30);
+
+}
+
+
+/* =========================================
+   FLOATING BACKGROUND PARTICLES
+========================================= */
+
+const particles =
+  document.getElementById(
+    'particles'
+  );
+
+
+function createParticle() {
+
+
+  const particle =
+    document.createElement('div');
+
+
+  const symbols = [
+
+    '❤️',
+    '💕',
+    '✨',
+    '🌸',
+    '💗',
+    '🦋',
+    '💖',
+    '🌷'
+
+  ];
+
+
+  particle.className =
+    'particle';
+
+
+  particle.innerText =
+    symbols[
+      Math.floor(
+        Math.random()
+        * symbols.length
+      )
+    ];
+
+
+  particle.style.left =
+    Math.random()
+    * 100
+    + 'vw';
+
+
+  particle.style.fontSize =
+    (
+      12
+      + Math.random() * 20
+    )
+    + 'px';
+
+
+  particle.style.animationDuration =
+    (
+      7
+      + Math.random() * 9
+    )
+    + 's';
+
+
+  particles.appendChild(
+    particle
+  );
+
+
+  setTimeout(
+    () => {
+
+      particle.remove();
+
+    },
+    16000
+  );
+
+}
+
+
+setInterval(
+  createParticle,
+  500
+);
+
+
+/* =========================================
+   HEART EXPLOSION
+========================================= */
+
+function createHearts(amount) {
+
+
+  for (
+    let i = 0;
+    i < amount;
+    i++
+  ) {
+
+
+    setTimeout(
+      () => {
+
+
+        const heart =
+          document.createElement(
+            'div'
+          );
+
+
+        const heartSymbols = [
+
+          '❤️',
+          '💗',
+          '💖',
+          '💕',
+          '💘'
+
+        ];
+
+
+        heart.innerText =
+          heartSymbols[
+            Math.floor(
+              Math.random()
+              * heartSymbols.length
+            )
+          ];
+
+
+        heart.style.position =
+          'fixed';
+
+
+        heart.style.left =
+          Math.random()
+          * 100
+          + 'vw';
+
+
+        heart.style.top =
+          '100vh';
+
+
+        heart.style.fontSize =
+          '25px';
+
+
+        heart.style.zIndex =
+          '10000';
+
+
+        heart.style.pointerEvents =
+          'none';
+
+
+        heart.style.transition =
+          'transform 3s linear, opacity 3s';
+
+
+        document.body.appendChild(
+          heart
+        );
+
+
+        requestAnimationFrame(
+          () => {
+
+
+            heart.style.transform =
+              `translateY(-110vh)
+               rotate(${Math.random() * 360}deg)`;
+
+
+            heart.style.opacity =
+              '0';
+
+
+          }
+        );
+
+
+        setTimeout(
+          () => {
+
+            heart.remove();
+
+          },
+          3200
+        );
+
+
+      },
+      i * 80
+    );
+
+  }
+
+}
+
+
+/* =========================================
+   CELEBRATION
+========================================= */
+
+function celebrate() {
+
+  createHearts(50);
+
+
+  document
+    .getElementById('finalMessage')
+    .classList.add('show');
+
+}
+
+
+/* =========================================
+   BACKGROUND MUSIC
+========================================= */
+
+/*
+
+IMPORTANT:
+
+Put your music file in the same folder
+as index.html.
+
+The file must be named:
+
+birthday-music.mp3
+
+*/
+
+let audio =
+  new Audio(
+    'birthday-music.mp3'
+  );
+
+
+audio.loop = true;
+
+audio.volume = 0.4;
+
+
+let musicPlaying = false;
+
+
+function toggleMusic() {
+
+
+  const button =
+    document.getElementById(
+      'musicBtn'
+    );
+
+
+  if (!musicPlaying) {
+
+
+    audio.play()
+      .then(() => {
+
+
+        musicPlaying = true;
+
+
+        button.innerText =
+          '♫ Music ON';
+
+
+      })
+      .catch(() => {
+
+
+        alert(
+          'Please put birthday-music.mp3 in the same folder as index.html.'
+        );
+
+
+      });
+
+
+  }
+
+
+  else {
+
+
+    audio.pause();
+
+
+    musicPlaying = false;
+
+
+    button.innerText =
+      '♫ Music';
+
+
+  }
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
